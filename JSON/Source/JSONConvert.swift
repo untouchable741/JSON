@@ -38,6 +38,14 @@ public extension JSON {
     public var array: [Any]? {
         return object as? [Any]
     }
+    
+    public var data: Data? {
+        do {
+            return try JSONSerialization.data(withJSONObject: object, options: [])
+        } catch {
+            return nil
+        }
+    }
 }
 
 ///MARK - Non-optional converting
@@ -69,5 +77,9 @@ public extension JSON {
     
     public var arrayValue: [Any] {
         return array ?? []
+    }
+    
+    public var dataValue: Data {
+        return data ?? Data()
     }
 }

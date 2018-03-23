@@ -16,6 +16,7 @@
 		97C702AC20655765006538D4 /* JSONConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C702AB20655765006538D4 /* JSONConvert.swift */; };
 		97C702AE20655E30006538D4 /* JSONSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C702AD20655E30006538D4 /* JSONSubscript.swift */; };
 		97C702B020655ED8006538D4 /* JSONSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C702AF20655ED8006538D4 /* JSONSubscriptTests.swift */; };
+		97D6152620656EB000D2D62D /* JSON+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6152520656EB000D2D62D /* JSON+Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		97C702AB20655765006538D4 /* JSONConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvert.swift; sourceTree = "<group>"; };
 		97C702AD20655E30006538D4 /* JSONSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSubscript.swift; sourceTree = "<group>"; };
 		97C702AF20655ED8006538D4 /* JSONSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSubscriptTests.swift; sourceTree = "<group>"; };
+		97D6152520656EB000D2D62D /* JSON+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				97C702AD20655E30006538D4 /* JSONSubscript.swift */,
 				97C702AB20655765006538D4 /* JSONConvert.swift */,
 				97B6B7D420654A7E00E55F87 /* JSONError.swift */,
+				97D6152520656EB000D2D62D /* JSON+Codable.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D6152620656EB000D2D62D /* JSON+Codable.swift in Sources */,
 				97B6B7D520654A7E00E55F87 /* JSONError.swift in Sources */,
 				97C702AC20655765006538D4 /* JSONConvert.swift in Sources */,
 				97B6B7D320653D9F00E55F87 /* JSON.swift in Sources */,
