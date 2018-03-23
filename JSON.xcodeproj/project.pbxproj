@@ -11,6 +11,7 @@
 		97AF717920653AB000FE8680 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF717820653AB000FE8680 /* JSONTests.swift */; };
 		97AF717B20653AB000FE8680 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 97AF716D20653AB000FE8680 /* JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97B6B7D320653D9F00E55F87 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6B7D220653D9F00E55F87 /* JSON.swift */; };
+		97B6B7D520654A7E00E55F87 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6B7D420654A7E00E55F87 /* JSONError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		97AF717820653AB000FE8680 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		97AF717A20653AB000FE8680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97B6B7D220653D9F00E55F87 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		97B6B7D420654A7E00E55F87 /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				97B6B7D220653D9F00E55F87 /* JSON.swift */,
+				97B6B7D420654A7E00E55F87 /* JSONError.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97B6B7D520654A7E00E55F87 /* JSONError.swift in Sources */,
 				97B6B7D320653D9F00E55F87 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +362,7 @@
 				INFOPLIST_FILE = JSON/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Huu-Tai-Vuong.JSON";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taivuong.JSON;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -381,7 +385,7 @@
 				INFOPLIST_FILE = JSON/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Huu-Tai-Vuong.JSON";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taivuong.JSON;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
