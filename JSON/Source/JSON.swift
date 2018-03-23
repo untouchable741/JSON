@@ -42,4 +42,9 @@ public struct JSON {
     private init(jsonObject: Any) {
         self.object = jsonObject
     }
+    
+    ///Check if JSON object is valid
+    public var isValid: Bool {
+        return type(of: object) != NSNull.self
+    }
 }

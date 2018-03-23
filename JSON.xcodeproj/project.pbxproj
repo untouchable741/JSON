@@ -15,7 +15,6 @@
 		97C702AA20655676006538D4 /* JSONConvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C702A920655676006538D4 /* JSONConvertTests.swift */; };
 		97C702AC20655765006538D4 /* JSONConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C702AB20655765006538D4 /* JSONConvert.swift */; };
 		97C702AE20655E30006538D4 /* JSONSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C702AD20655E30006538D4 /* JSONSubscript.swift */; };
-		97C702B020655ED8006538D4 /* JSONSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C702AF20655ED8006538D4 /* JSONSubscriptTests.swift */; };
 		97D6152620656EB000D2D62D /* JSON+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6152520656EB000D2D62D /* JSON+Codable.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		97C702A920655676006538D4 /* JSONConvertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvertTests.swift; sourceTree = "<group>"; };
 		97C702AB20655765006538D4 /* JSONConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvert.swift; sourceTree = "<group>"; };
 		97C702AD20655E30006538D4 /* JSONSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSubscript.swift; sourceTree = "<group>"; };
-		97C702AF20655ED8006538D4 /* JSONSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSubscriptTests.swift; sourceTree = "<group>"; };
 		97D6152520656EB000D2D62D /* JSON+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON+Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +95,6 @@
 			children = (
 				97AF717820653AB000FE8680 /* JSONTests.swift */,
 				97C702A920655676006538D4 /* JSONConvertTests.swift */,
-				97C702AF20655ED8006538D4 /* JSONSubscriptTests.swift */,
 				97AF717A20653AB000FE8680 /* Info.plist */,
 			);
 			path = JSONTests;
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				97AF717920653AB000FE8680 /* JSONTests.swift in Sources */,
-				97C702B020655ED8006538D4 /* JSONSubscriptTests.swift in Sources */,
 				97C702AA20655676006538D4 /* JSONConvertTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
