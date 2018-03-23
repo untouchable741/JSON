@@ -21,16 +21,24 @@ class JSONTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testInitNilData() {
+        XCTAssertThrowsError(try JSON(data: nil), "Initialize with nil data should throw error") { error in
+            if let error = error as? CustomNSError {
+                XCTAssertEqual(error.errorCode, JSONError.invalidJSON.errorCode, "Invalid JSON error should be thrown")
+            } else {
+                XCTAssertFalse(true, "Wrong error type thrown")
+            }
         }
     }
     
+    func testInitValidData() {
+        let sampleJSON = ["message": "this is message"]
+        do {
+            let sampleData = try JSONSerialization.data(withJSONObject: sampleJSON, options: [])
+            let json = try JSON(data: sampleData)
+            XCTAssertNotNil(json, "JSON must be intialized succesfully")
+        } catch {
+            XCTAssertFalse(true, "Error should not be thrown")
+        }
+    }
 }

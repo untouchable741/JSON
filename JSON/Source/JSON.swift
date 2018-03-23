@@ -9,5 +9,20 @@
 import Foundation
 
 public struct JSON {
-    public init() { debugPrint("Hello JSON") }
+    
+    var object: Any
+    
+    public init?(data: Data?, options opt: JSONSerialization.ReadingOptions = []) throws {
+        
+        ///Throw invalid error if data is invalid
+        guard let data = data else { throw JSONError.invalidJSON }
+        
+        ///Try to convert data to json object
+        let object = try JSONSerialization.jsonObject(with: data, options: opt)
+        self.init(object)
+    }
+    
+    public init(_ object: Any) {
+        self.object = object
+    }
 }
